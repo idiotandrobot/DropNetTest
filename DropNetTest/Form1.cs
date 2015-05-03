@@ -103,7 +103,7 @@ namespace DropNetTest
         {
             Authenticate(
                    url => {
-                       var proc = Process.Start(url);
+                       var proc = Process.Start("iexplore.exe", url);
                        proc.WaitForExit(); 
                         Authenticated(
                             () =>
